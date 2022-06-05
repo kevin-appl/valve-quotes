@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+
+  flask:
+    build: ./flask
+    container_name: flask
+    environment:
+      - ENV_DB_PASSWORD=YOUR-PASSWORD # Use Docker secrets to store passwords (https://docs.docker.com/engine/swarm/secrets/).
+    expose: 
+      - 8080
+
+  mysql:
+    build: ./mysql
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=YOUR-PASSWORD # Use Docker secrets to store passwords (https://docs.docker.com/engine/swarm/secrets/).
+    command: --secure-file-priv='/var/mysql-csv/'
+    expose:
+      - 3306
+
