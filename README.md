@@ -3,9 +3,9 @@ A free fan-made API to retrieve quotes from the talented developers at Valve and
 
 Note: This repository currently doesn't contain the sources and configuration of the Nginx server. You can visit the linked [GitHub repository](https://github.com/kevin-appl/python-flask-docker-https) to see how to set up an Nginx server in combination with Flask, Gunicorn and Docker.
 
-Website and demo: https://valvequotes.xyz
+**Website and demo:** https://valvequotes.xyz
 
-Production host: https://api.valvequotes.xyz
+**Production host:** https://api.valvequotes.xyz
 
 
 ## Usage
